@@ -5,13 +5,8 @@
     a {
         text-decoration: none;
     }
-    .nav-bar {
-        padding: 0px 10px 0px 10px;
-        display: grid;
-        grid-template-columns: 67px 67px;
-    }
     .nav-bar a{
-        font-size: 14px;
+        font-size: 12px;
         color: hsl(0, 0%, 41%)
     }
     .bar-logo{
@@ -42,16 +37,57 @@
         font-size: 14px;
         color: hsl(0, 0%, 41%)
     }
+    li {
+        display: inline;
+        margin: 0px 1px 0px 15px;
+    }
+    ul {
+        list-style-type: none;
+        margin-top: 27px;
+        padding: 0;
+    }
+    #bottom-nav-bar ul{
+        position: fixed;
+        bottom: 0;
+        margin: 20px 40px 30px 40px; 
+        background-size: 100vw;
+    }
+    #bottom-nav-bar a{
+        font-size: 14px;
+
+    }
+    #footer{
+        width: 100%;
+        background: hsl(44, 0%, 84%);
+        height: 100px;
+        line-height: 40px;
+    }
+    #nav-right{
+        text-align: right;
+    }
+    #nav-left{
+        text-align: left;
+    }
 </style>
 <html>
     <body>
         <div class="nav-bar">
-            <div>
-                <a href="www.google.com">About</a> 
-            </div>
-            <div> 
-                <a href="www.youtube.com"> Store</a>
-            </div>
+            <ul>
+                <div id="nav-left">
+                    <li>
+                        <a href="www.google.com">About</a> 
+                    </li>
+                    <li>
+                        <a href="www.youtube.com" >  Store</a>   
+                    </li>
+                <div id="nav-right">
+                    <li>
+                        <a href="www.youtube.com">  Gmail</a>   
+                    </li>
+                    <li>
+                        <a href="www.youtube.com">  Images</a>   
+                    </li>
+            </ul>
         </div>
         <div id="main" class="bar-logo">
             <div>
@@ -78,5 +114,25 @@
                 
             </div>
         </div>
+        <footer>
+            <div class="nav-bar" id="bottom-nav-bar" >
+                <ul>
+                    <div id="nav-left">
+                        <li>
+                            <a href="www.google.com">About</a> 
+                        </li>
+                        <li>
+                            <a href="www.youtube.com">  Store</a>   
+                        </li>
+                    <div id="nav-right">
+                        <li>
+                            <a href="www.youtube.com">  Gmail</a>   
+                        </li>
+                        <li>
+                            <a href="www.youtube.com">  Images</a>   
+                        </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
