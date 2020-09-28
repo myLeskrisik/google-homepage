@@ -1,0 +1,82 @@
+<style>
+    body{
+        font-family: arial, sans-serif;
+    }
+    a {
+        text-decoration: none;
+    }
+    .nav-bar {
+        padding: 0px 10px 0px 10px;
+        display: grid;
+        grid-template-columns: 67px 67px;
+    }
+    .nav-bar a{
+        font-size: 14px;
+        color: hsl(0, 0%, 41%)
+    }
+    .bar-logo{
+        padding: 200px;
+    }
+    .search-bar{
+        clear: both;
+        margin-top: 25px;
+        border-color: hsl(4, 20%, 89%);
+    }
+    .search-bar input{
+        width: 575px;
+        border-radius: 22px;
+        height: 35px;
+        border-width: 1px;
+        clear: both;
+    }
+    .below-buttons {
+        display: flex;
+        width: 272px;
+        justify-content: space-between;
+        margin-top: 40px;
+        
+    }
+    .below-buttons button {
+        background-color: transparent;
+        border: none;
+        font-size: 14px;
+        color: hsl(0, 0%, 41%)
+    }
+</style>
+<html>
+    <body>
+        <div class="nav-bar">
+            <div>
+                <a href="www.google.com">About</a> 
+            </div>
+            <div> 
+                <a href="www.youtube.com"> Store</a>
+            </div>
+        </div>
+        <div id="main" class="bar-logo">
+            <div>
+                <center>
+                    <div id="Google-logo">
+                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="90" width="272">
+                    </div>
+                    <div class=search-bar>
+                        <input type="text" placeholder="" width="700">
+                    </div>
+                    <div class="below-buttons">
+                        <div>
+                            <button>
+                                Google Search
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                I'm Feeling Lucky
+                            </button>
+                        </div>    
+                    </div>
+                </center>
+                
+            </div>
+        </div>
+    </body>
+</html>
